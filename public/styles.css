@@ -1021,44 +1021,6 @@ h2 {
   color: #526054;
   margin: 0;
 }
-.tool-strip {
-  margin-top: 80px;
-  border-top: 1px solid var(--rule);
-  padding-top: 28px;
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 24px;
-}
-.tool-strip > p {
-  font-size: 14px;
-  margin: 0;
-  color: #526054;
-}
-.tool-strip > div {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-.tool-strip > div a {
-  font-size: 20px;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-}
-.tool-strip > div a:hover {
-  text-decoration: underline;
-}
-.tool-strip svg {
-  width: 16px;
-  height: 16px;
-  transform: rotate(-45deg);
-}
-.tool-strip > small {
-  grid-column: 2;
-  font-size: 12px;
-  color: #58645a;
-}
 .closing-panel {
   background: var(--proof);
   color: white;
@@ -1320,17 +1282,6 @@ details[open] .plus:after {
   }
   .closing-copy > p {
     font-size: 20px;
-  }
-  .tool-strip {
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
-  .tool-strip > small {
-    grid-column: 1;
-  }
-  .tool-strip > div {
-    justify-content: flex-start;
-    gap: 40px;
   }
   .faq {
     gap: 40px;
@@ -1712,22 +1663,6 @@ details[open] .plus:after {
   .approach-grid p {
     font-size: 17px;
     max-width: 40ch;
-  }
-  .tool-strip {
-    margin-top: 48px;
-    gap: 20px;
-  }
-  .tool-strip > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 22px;
-  }
-  .tool-strip > div a {
-    font-size: 20px;
-  }
-  .tool-strip > small {
-    font-size: 12px;
-    line-height: 1.6;
   }
   .closing-panel {
     padding: 38px 22px;
