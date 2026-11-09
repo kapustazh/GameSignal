@@ -674,20 +674,6 @@ h2 {
   padding-top: 20px;
   border-top: 1px solid #e1e6dd;
 }
-.action-marker {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 31px;
-  height: 31px;
-  background: var(--forest);
-  color: var(--pink);
-}
-.action-marker svg {
-  width: 17px;
-  height: 17px;
-}
 .next-action strong {
   font-size: 12px;
   font-weight: 600;
