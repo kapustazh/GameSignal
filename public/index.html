@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Meet GameSignal, a platform concept helping game developers understand player feedback, find existing tools, and plan their next move from development to release."
+    />
+    <meta name="theme-color" content="#ecedee" />
+    <meta property="og:title" content="GameSignal — Find your next move" />
+    <meta
+      property="og:description"
+      content="Player insights, launch planning, advertising, and creator outreach. A clearer path from building your game to sharing it."
+    />
+    <meta property="og:type" content="website" />
+    <title>GameSignal — Find your next move</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/InterVariable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <svg
+      class="svg-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="arrow" viewBox="0 0 24 24">
+        <path d="M4 12h15M13 5l7 7-7 7" />
+      </symbol>
+      <symbol id="signal" viewBox="0 0 32 32">
+        <path
+          d="M3 24V17h7v-7h7V3h12v12h-7v7h-7v7H3z"
+          fill="currentColor"
+          stroke="none"
+        />
+      </symbol>
+    </svg>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">
+      A new platform for the next chapter of your game.
+      <a href="#approach"
+        >Explore the idea <svg><use href="#arrow" /></svg
+      ></a>
+    </div>
+    <header class="site-header wrap">
+      <a class="brand" href="#" aria-label="GameSignal home"
+        ><svg><use href="#signal" /></svg><span>GameSignal</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#platform">The platform</a>
+        <a href="#capabilities">What’s possible</a>
+        <a href="#approach">Our approach</a>
+      </nav>
+      <a
+        class="nav-action"
+        href="https://github.com/kapustazh/GameSignal"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Follow the project <svg><use href="#arrow" /></svg
+      ></a>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-art" aria-hidden="true">
+          <i class="module green"></i><i class="module pink"></i
+          ><i class="module blue"></i><i class="module yellow"></i
+          ><i class="module green-small"></i><i class="module pink-small"></i
+          ><i class="module dotted"></i>
+        </div>
+        <div class="wrap hero-content">
+          <h1 id="hero-title">GameSignal</h1>
+          <div class="hero-bottom">
+            <div class="hero-message">
+              <p>You build the game.<br />Find your next move.</p>
+              <a class="button primary hero-button" href="#platform"
+                >Explore the platform <svg><use href="#arrow" /></svg
+              ></a>
+            </div>
+            <div class="hero-note">
+              <span class="tiny-signal" aria-hidden="true"></span>
+              <p>
+                The right tools. Clearer feedback.<br />A plan to reach your
+                players.
+              </p>
+              <p class="quiet">
+                From the first playtest<br />to your next release.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-caption wrap">
+          <span>A platform concept for game developers</span
+          ><span
+            >Built around your next step <svg><use href="#arrow" /></svg
+          ></span>
+        </div>
+      </section>
+
+      <section
+        class="platform-section section-pad"
+        id="platform"
+        aria-labelledby="platform-title"
+      >
+        <div class="wrap">
+          <div class="section-intro">
+            <h2 id="platform-title">Less guesswork.<br />More next steps.</h2>
+            <p>
+              Turn scattered feedback and launch questions into a practical
+              workflow, with existing tools and AI-assisted guidance.
+            </p>
+          </div>
+          <div class="product-stage">
+            <div class="preview-label">
+              <span class="status-dot"></span> Interactive concept preview
+              <span>Illustrative game &amp; sample data</span>
+            </div>
+            <div class="workspace">
+              <aside class="workspace-sidebar">
+                <div class="workspace-logo">
+                  <svg><use href="#signal" /></svg><span>GameSignal</span>
+                </div>
+                <div class="game-identity">
+                  <span class="game-tile" aria-hidden="true"
+                    ><i></i><i></i><i></i
+                  ></span>
+                  <div>
+                    <strong>Mosslight</strong><span>Cozy exploration game</span>
+                  </div>
+                </div>
+                <div
+                  class="workspace-tabs"
+                  role="tablist"
+                  aria-label="Explore proposed workflows"
+                  aria-orientation="vertical"
+                >
+                  <button
+                    id="tab-feedback"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="panel-feedback"
+                    tabindex="0"
+                  >
+                    <span
+                      class="tab-mark feedback-mark"
+                      aria-hidden="true"
+                    ></span
+                    >Player feedback<svg><use href="#arrow" /></svg>
+                  </button>
+                  <button
+                    id="tab-launch"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-launch"
+                    tabindex="-1"
+                  >
+                    <span class="tab-mark launch-mark" aria-hidden="true"></span
+                    >Launch planning<svg><use href="#arrow" /></svg>
+                  </button>
+                  <button
+                    id="tab-advertising"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-advertising"
+                    tabindex="-1"
+                  >
+                    <span class="tab-mark ad-mark" aria-hidden="true"></span
+                    >Advertising<svg><use href="#arrow" /></svg>
+                  </button>
+                  <button
+                    id="tab-outreach"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="panel-outreach"
+                    tabindex="-1"
+                  >
+                    <span
+                      class="tab-mark outreach-mark"
+                      aria-hidden="true"
+                    ></span
+                    >Audience &amp; outreach<svg><use href="#arrow" /></svg>
+                  </button>
+                </div>
+                <div class="sidebar-foot">
+                  <span class="status-dot"></span> Your game. Your direction.
+                </div>
+              </aside>
+              <div class="workspace-main">
+                <div class="workspace-top">
+                  <span
+                    >Mosslight /
+                    <span id="workspace-location">Player feedback</span></span
+                  ><span class="concept-tag">Concept preview</span>
+                </div>
+                <section
+                  id="panel-feedback"
+                  class="workflow-panel"
+                  role="tabpanel"
+                  aria-labelledby="tab-feedback"
+                  tabindex="0"
+                >
+                  <div class="panel-heading">
+                    <div>
+                      <h3>Listen. Learn. Level up.</h3>
+                      <p>Your players are telling you what matters.</p>
+                    </div>
+                    <span class="sample-count"
+                      >24<span>sample responses</span></span
+                    >
+                  </div>
+                  <div class="insight-layout">
+                    <div class="themes">
+                      <h4>What’s coming through</h4>
+                      <div class="theme">
+                        <div>
+                          <span>Exploration feels rewarding</span
+                          ><strong>15 mentions</strong>
+                        </div>
+                        <div class="theme-bar">
+                          <i style="--bar: 88%; --bar-color: var(--green)"></i>
+                        </div>
+                      </div>
+                      <div class="theme">
+                        <div>
+                          <span>The first objective is unclear</span
+                          ><strong>9 mentions</strong>
+                        </div>
+                        <div class="theme-bar">
+                          <i style="--bar: 53%; --bar-color: var(--pink)"></i>
+                        </div>
+                      </div>
+                      <div class="theme">
+                        <div>
+                          <span>Players want controller support</span
+                          ><strong>6 mentions</strong>
+                        </div>
+                        <div class="theme-bar">
+                          <i style="--bar: 35%; --bar-color: var(--yellow)"></i>
+                        </div>
+                      </div>
+                      <p class="data-note">
+                        Themes can overlap across responses.
+                      </p>
+                    </div>
+                    <blockquote>
+                      <span>From a sample playtest</span>
+                      <p>
+                        “I loved finding the hidden paths. I just wasn’t sure
+                        where to go at the start.”
+                      </p>
+                      <footer>Illustrative player feedback</footer>
+                    </blockquote>
+                  </div>
+                  <div class="next-action">
+                    <span class="action-marker" aria-hidden="true"
+                      ><svg><use href="#arrow" /></svg
+                    ></span>
+                    <div>
+                      <strong>Your next move</strong>
+                      <p>
+                        Clarify the first objective, then test the opening with
+                        a fresh group of players.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+                <section
+                  id="panel-launch"
+                  class="workflow-panel"
+                  role="tabpanel"
+                  aria-labelledby="tab-launch"
+                  tabindex="0"
+                  hidden
+                >
+                  <div class="panel-heading">
+                    <div>
+                      <h3>A launch you can work toward.</h3>
+                      <p>An example plan, shaped around a six-week runway.</p>
+                    </div>
+                  </div>
+                  <ol class="launch-steps">
+                    <li>
+                      <span>Weeks 1–2</span>
+                      <div>
+                        <strong>Listen and prepare</strong>
+                        <p>
+                          Retest the opening, capture gameplay, and define the
+                          game’s clearest hook.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <span>Weeks 3–4</span>
+                      <div>
+                        <strong>Find your first advocates</strong>
+                        <p>
+                          Prepare a press kit, shortlist creators, and share a
+                          playable demo.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <span>Weeks 5–6</span>
+                      <div>
+                        <strong>Coordinate the release</strong>
+                        <p>
+                          Confirm publication tasks, schedule announcements, and
+                          prepare player support.
+                        </p>
+                      </div>
+                    </li>
+                  </ol>
+                  <div class="next-action">
+                    <span class="action-marker" aria-hidden="true"
+                      ><svg><use href="#arrow" /></svg
+                    ></span>
+                    <div>
+                      <strong>Your next move</strong>
+                      <p>
+                        Check platform deadlines and adapt the plan to your
+                        team’s actual capacity.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+                <section
+                  id="panel-advertising"
+                  class="workflow-panel"
+                  role="tabpanel"
+                  aria-labelledby="tab-advertising"
+                  tabindex="0"
+                  hidden
+                >
+                  <div class="panel-heading">
+                    <div>
+                      <h3>Make the hook the headline.</h3>
+                      <p>
+                        A sample creative brief to turn into your first
+                        campaign.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ad-example">
+                    <div class="ad-visual" aria-hidden="true">
+                      <span class="ad-square one"></span
+                      ><span class="ad-square two"></span
+                      ><span class="ad-square three"></span
+                      ><span>Mosslight</span>
+                    </div>
+                    <div>
+                      <span class="small-label">Example ad concept</span>
+                      <h4>A little lost.<br />A lot to discover.</h4>
+                      <p>
+                        Lead with hidden paths and quiet discoveries. Test a
+                        short gameplay clip against a longer exploration
+                        sequence.
+                      </p>
+                      <span class="ad-format"
+                        >Gameplay video · Two creative variations</span
+                      >
+                    </div>
+                  </div>
+                  <div class="next-action">
+                    <span class="action-marker" aria-hidden="true"
+                      ><svg><use href="#arrow" /></svg
+                    ></span>
+                    <div>
+                      <strong>Your next move</strong>
+                      <p>
+                        Choose one channel, set a test budget, and agree what
+                        success should measure.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+                <section
+                  id="panel-outreach"
+                  class="workflow-panel"
+                  role="tabpanel"
+                  aria-labelledby="tab-outreach"
+                  tabindex="0"
+                  hidden
+                >
+                  <div class="panel-heading">
+                    <div>
+                      <h3>Find your kind of players.</h3>
+                      <p>
+                        Start with shared interests and relevant conversations.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="outreach-list">
+                    <div>
+                      <span class="outreach-type">Creators</span
+                      ><strong>Cozy exploration &amp; discovery</strong>
+                      <p>
+                        Research creators who already cover games with a similar
+                        pace and audience.
+                      </p>
+                    </div>
+                    <div>
+                      <span class="outreach-type">Communities</span
+                      ><strong>Small worlds, curious players</strong>
+                      <p>
+                        Find communities discussing exploration games and follow
+                        their sharing rules.
+                      </p>
+                    </div>
+                    <div>
+                      <span class="outreach-type">Podcasts</span
+                      ><strong>The story behind the game</strong>
+                      <p>
+                        Pitch a conversation about building a world that rewards
+                        curiosity.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="next-action">
+                    <span class="action-marker" aria-hidden="true"
+                      ><svg><use href="#arrow" /></svg
+                    ></span>
+                    <div>
+                      <strong>Your next move</strong>
+                      <p>
+                        Build a small, relevant shortlist and personalize each
+                        introduction.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+                <div class="workspace-bottom">
+                  <span>AI-assisted analysis. Developer-led decisions.</span
+                  ><span>Proposed workflow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="capabilities section-pad"
+        id="capabilities"
+        aria-labelledby="capabilities-title"
+      >
+        <div class="wrap">
+          <div class="blue-intro">
+            <h2 id="capabilities-title">
+              Your next chapter,<br />with a clearer plan.
+            </h2>
+            <p>
+              Four connected ways to help your game move forward. Explore the
+              proposed capabilities.
+            </p>
+          </div>
+          <div class="capability-grid">
+            <article>
+              <div class="capability-art feedback-art" aria-hidden="true">
+                <span></span><span></span><span></span><i></i>
+              </div>
+              <h3>Understand your players.</h3>
+              <p>
+                Bring playtests, reviews, and comments together. Find recurring
+                themes and turn them into priorities for your next build.
+              </p>
+              <a href="#platform" data-workflow="feedback"
+                >Explore player insights <svg><use href="#arrow" /></svg
+              ></a>
+            </article>
+            <article>
+              <div class="capability-art plan-art" aria-hidden="true">
+                <span></span><span></span><span></span><i></i>
+              </div>
+              <h3>Plan your release.</h3>
+              <p>
+                Connect demos, announcements, outreach, and publication tasks in
+                a timeline that fits your game and your team.
+              </p>
+              <a href="#platform" data-workflow="launch"
+                >Explore launch planning <svg><use href="#arrow" /></svg
+              ></a>
+            </article>
+            <article>
+              <div class="capability-art advertising-art" aria-hidden="true">
+                <span></span><span></span><i></i>
+              </div>
+              <h3>Give your game a voice.</h3>
+              <p>
+                Shape your hook into campaign concepts, Google Ads copy, and
+                creative briefs ready for review and testing.
+              </p>
+              <a href="#platform" data-workflow="advertising"
+                >Explore advertising <svg><use href="#arrow" /></svg
+              ></a>
+            </article>
+            <article>
+              <div class="capability-art audience-art" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><i></i>
+              </div>
+              <h3>Reach the right people.</h3>
+              <p>
+                Research audiences, creators, communities, and podcasts that fit
+                your game. Prepare thoughtful, relevant outreach.
+              </p>
+              <a href="#platform" data-workflow="outreach"
+                >Explore audience research <svg><use href="#arrow" /></svg
+              ></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="approach section-pad"
+        id="approach"
+        aria-labelledby="approach-title"
+      >
+        <div class="wrap">
+          <div class="section-intro">
+            <h2 id="approach-title">
+              Good tools exist.<br />Let’s connect the dots.
+            </h2>
+            <p>
+              You shouldn’t have to build every solution yourself. GameSignal’s
+              vision is to connect your problem to the right tools, workflow,
+              and support.
+            </p>
+          </div>
+          <div class="approach-grid">
+            <div>
+              <h3>Tell us what’s<br />in your way.</h3>
+              <p>
+                Your stage, your goal, your constraints. A useful recommendation
+                starts with understanding the problem.
+              </p>
+            </div>
+            <div>
+              <h3>Existing tools.<br />A practical workflow.</h3>
+              <p>
+                Understand what to use, why it fits, and how the pieces work
+                together. Relevant GameSignal services can sit alongside
+                external tools.
+              </p>
+            </div>
+            <div>
+              <h3>Try it. Listen.<br />Choose your next move.</h3>
+              <p>
+                Bring back what happened. Use real player feedback to refine the
+                next decision, from development through release.
+              </p>
+            </div>
+          </div>
+          <div class="tool-strip">
+            <p>A few tools in the existing ecosystem</p>
+            <div>
+              <a
+                href="https://impress.games/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >IMPRESS <svg><use href="#arrow" /></svg></a
+              ><a
+                href="https://www.lurkit.gg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Lurkit <svg><use href="#arrow" /></svg></a
+              ><a
+                href="https://n8n.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >n8n <svg><use href="#arrow" /></svg></a
+              ><a
+                href="https://unity.com/products/unity-ads"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Unity Ads <svg><use href="#arrow" /></svg
+              ></a>
+            </div>
+            <small
+              >Examples for discovery. Integrations and partnerships are
+              proposed.</small
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="closing wrap" aria-labelledby="closing-title">
+        <div class="closing-panel">
+          <h2 id="closing-title">
+            <span>Make games.</span><span>Find players.</span
+            ><span>Keep going.</span>
+          </h2>
+          <div class="closing-copy">
+            <p>
+              We’re shaping GameSignal around the questions developers face
+              between building a game and sharing it with the world.
+            </p>
+            <a
+              class="button primary"
+              href="https://github.com/kapustazh/GameSignal"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Follow GameSignal <svg><use href="#arrow" /></svg></a
+            ><span>Early concept. Help shape what comes next.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq section-pad wrap" aria-labelledby="faq-title">
+        <h2 id="faq-title">A few things<br />to know.</h2>
+        <div class="faq-list">
+          <details>
+            <summary>
+              What is GameSignal today?<span
+                class="plus"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>
+              GameSignal is an early platform concept. This page presents the
+              vision and lets you explore illustrative workflows. The proposed
+              AI analysis and account integrations are part of the product
+              direction.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Who are we building for?<span
+                class="plus"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>
+              Game developers and small studios who want help choosing tools,
+              learning from feedback, and preparing for release. PC, indie, and
+              mobile games inform the broader vision.
+            </p>
+          </details>
+          <details>
+            <summary>
+              How would AI help?<span class="plus" aria-hidden="true"></span>
+            </summary>
+            <p>
+              AI could help group feedback, summarize research, and draft plans
+              and campaign materials. Developers would review the suggestions
+              and make the final decisions.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Will you recommend other tools?<span
+                class="plus"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>
+              Yes. Connecting developers to existing solutions is central to the
+              idea. Relevant GameSignal products and services would be clearly
+              identified alongside external recommendations.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <a class="brand" href="#" aria-label="GameSignal home"
+            ><svg><use href="#signal" /></svg><span>GameSignal</span></a
+          ><span>A clearer path from build to release.</span
+          ><a
+            href="https://github.com/kapustazh/GameSignal"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Find us on GitHub <svg><use href="#arrow" /></svg
+          ></a>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 GameSignal</span>
+          <p>
+            Platform concept. All product previews and example data are
+            illustrative.
+          </p>
+          <a href="#"
+            >Back to top <svg><use href="#arrow" /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
